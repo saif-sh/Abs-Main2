@@ -1,4 +1,4 @@
-import styles from "./style";
+import styless from "./style";
 import { Navbar, Hero, Stats, About, Services, Testimonials, Blogcard, Footer } from './components';
 import { whatslogo } from "./assets";
 import { Navigate } from "react-router-dom";
