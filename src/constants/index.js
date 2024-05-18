@@ -46,19 +46,27 @@ export const feedback = [
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
+      "I have recently started my business of designer sarees in Surat, and came to know about A Business Studio through Instagram. I wanted to promote my business online and asked the team to help me and they served with good results.",
+    name: "Oregon Saree, Surat, Gujarat",
+    title: "Founder",
     // img: people02,
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
+      "A business Studio helped me in a recent staff recruitment for my business. Their team helped me get exactly what I was looking for. I Was very impressed by their overall conduct. Will definitely use their services in the future as well!",
+    name: "Arman Sandhu",
+    title: "Founder",
     // img: people03,
   },
+  // {
+  //   id: "feedback-4",
+  //   content:
+  //           "A business Studio is an excellent startup. I have availed their services a couple of times and have always received desired results. Would definitely recommend trying them if you want any help tackling your business challenges.",
+  //   name: "Kanwal Nextcareindia",
+  //   title: "Local Guide",
+  //   // img: people03,
+  // },
 ];
 
 export const stats = [
@@ -122,7 +130,7 @@ export const footerLinks = [
       },
       {
         name: "Blog",
-        link: "https://www.hoobank.com/blog/",
+        link: "https://www.abusinessstudio.com/blog/",
       },
       {
         name: "Newsletters",

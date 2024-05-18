@@ -33,7 +33,7 @@ const App = () => (
       <Footer />
     </div>
     <div className="fixed bottom-0 right-0 p-5 z-6 mb-20 left-auto ">
-      <a href="https://wa.me/8368679354?text=Hi,%20I'm%20interested%20in%20your%20[service]%20for%20my%20[business%20type/size].%20Could%20you%20please%20provide%20pricing%20and%20details?" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/+918368679354?text=Hi,%20I'm%20interested%20in%20your%20[service]%20for%20my%20[business%20type/size].%20Could%20you%20please%20provide%20pricing%20and%20details?" target="_blank" rel="noopener noreferrer">
         <img src={whatslogo} width="80" alt="Business Studio WhatsApp" />
       </a>
     </div>
