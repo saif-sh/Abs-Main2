@@ -11,8 +11,8 @@ const Hero = () => (
 
       <div className="flex flex-row justify-between ">
         <h1 className="flex-1 text-center font-outfit font-bold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
-          CONNECTING <br className="sm:block hidden" />{" "}
-          <span className="text-gradient"> BUSINESSES</span>{" "}
+          Your Business, <br className="sm:block hidden" />{" "}
+          <span className="text-gradient"> Our Expertise.</span>{" "}
         </h1>
       </div>
       <p className={`font-outfit font-thin text-dimWhite text-[24px] leading-[30.8px] max-w-[670px] mt-2 `}>
