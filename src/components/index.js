@@ -13,10 +13,10 @@ import TextSlider from "./tslide";
 import Sercard from "./Sercard";
 import Team from "./Team";
 import BlogList4Col from "./BlogList4Col";
-import PartnerLogo from "./PartnerLogo";
+import LogoCarousel from "./LogoCarousel";
 
 export{
-    PartnerLogo,
+    LogoCarousel,
     BlogList4Col,
     Team,
     Sercard,

@@ -1,7 +1,7 @@
 import styles from "./style";
-import { Navbar, Hero, Stats, About, Services, Testimonials, Blogcard, Footer } from './components';
+import { Navbar, Hero, Stats, About, Services, Testimonials, Blogcard, Footer, LogoCarousel } from './components';
 import { whatslogo } from "./assets";
-import { Navigate } from "react-router-dom";
+import { logos } from "./constants";
 
 
 const App = () => (
@@ -29,7 +29,9 @@ const App = () => (
       <div className={`${styles.flexCenter}`}>
         <Testimonials />
       </div>
+      <LogoCarousel/>;
       <Blogcard />
+
       <Footer />
     </div>
     <div className="fixed bottom-0 right-0 p-5 z-6 mb-20 left-auto ">

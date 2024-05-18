@@ -93,19 +93,11 @@ export const footerLinks = [
     links: [
       {
         name: "Content",
-        link: "https://www.abusinessstudio.com/content/",
-      },
-      {
-        name: "How it Works",
-        link: "https://www.abusinessstudio.com/how-it-works/",
-      },
-      {
-        name: "Create",
-        link: "https://www.abusinessstudio.com/create/",
+        link: "/#",
       },
       {
         name: "Explore",
-        link: "https://www.abusinessstudio.com/explore/",
+        link: "/about",
       },
       {
         name: "Terms & Services",
@@ -118,23 +110,15 @@ export const footerLinks = [
     links: [
       {
         name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
+        link: "/CTA",
       },
       {
         name: "Partners",
-        link: "https://www.hoobank.com/partners/",
-      },
-      {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
+        link: "/partners",
       },
       {
         name: "Blog",
-        link: "https://www.abusinessstudio.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
+        link: "/blogcard",
       },
     ],
   },
@@ -143,11 +127,11 @@ export const footerLinks = [
     links: [
       {
         name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
+        link: "/partner",
       },
       {
         name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        link: "/become-a-partner/",
       },
     ],
   },
@@ -284,19 +268,11 @@ export const careersData = [
   // Add more careers as needed
 ];
 
-
-// partners.js
-const partnerLogos = [
-  {
-    id: 1,
-    logo: 'https://unsplash.com/photos/bmw-logo-ZopoSyTT_GM',
-    alt: 'Company 1',
-  },
-  {
-    id: 2,
-    logo: 'https://unsplash.com/photos/bmw-logo-ZopoSyTT_GM',
-    alt: 'Company 2',
-  },
-  // Add more partner logos here
+export const logos = [
+  "https://via.placeholder.com/150",
+  "https://via.placeholder.com/150",
+  "https://via.placeholder.com/150",
+  "https://via.placeholder.com/150",
+  "https://via.placeholder.com/150",
+  // Add more logo URLs as needed
 ];
-export default partnerLogos;

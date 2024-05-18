@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
-import {Contactpg, Aboutpg, Blog, Blogpg, Servicespg,CareersPg,Partner} from "./Pages"
+import {Contactpg, Aboutpg, Blog, Blogpg, Servicespg,CareersPg} from "./Pages"
 
 const router = createBrowserRouter([
   {
@@ -36,10 +36,6 @@ const router = createBrowserRouter([
   {
     path: "/blog/:id",
     element: <Blog/>,
-  },
-  {
-    path: "/partners",
-    element: <Partner/>,
   },
 ]);
 
