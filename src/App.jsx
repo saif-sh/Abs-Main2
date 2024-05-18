@@ -1,5 +1,5 @@
 import styles from "./style";
-import { Navbar, Hero, Stats, About, Services, Testimonials, Blogcard, Footer, LogoCarousel } from './components';
+import { Navbar, Hero, Stats, About, Services, Testimonials, Blogcard, Footer} from './components';
 import { whatslogo } from "./assets";
 import { logos } from "./constants";
 
@@ -29,7 +29,6 @@ const App = () => (
       <div className={`${styles.flexCenter}`}>
         <Testimonials />
       </div>
-      <LogoCarousel/>;
       <Blogcard />
 
       <Footer />
