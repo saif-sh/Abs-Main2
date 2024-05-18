@@ -30,8 +30,16 @@ import aipic from "./aipic.jpg"
 import cypic from "./cypic.jpg"
 import whatslogo from "./whatslogo.webp"
 import newabt from "./bldngmn.png"
+import finsuc from "./finsuc.jpg"
+import recruitment from "./recruitment.jpg"
+import trade from "./trade.jpeg"
+import consult from "./consult.png"
 
 export {
+    finsuc,
+    recruitment,
+    trade,
+    consult,
     facebook,
     newabt,
     whatslogo,
