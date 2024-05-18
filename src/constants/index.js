@@ -234,33 +234,33 @@ export const contactConfig = {
 export const serviceapi = [
   {
     id: 1,
-    logo: insta,
-    title: "Mobile Application Development",
-    info: "Transform your app dreams into reality with [Business Studio]. Our seasoned team creates tailored mobile applications from start to finish. From concept to launch, we've got you covered. Let's make your app idea a success together.",
-  },
+    logo: "fab fa-amazon-pay",
+    title: "Recruitement",
+    info: "Discover top talent effortlessly with A Business Studio's Recruitment Services. We streamline your hiring process with personalized solutions, connecting you with qualified candidates that fit your company culture and goals. Let us find the perfect match for your team.",
+  }, 
   {
     id: 2,
-    logo: "fas fa-user-check",
-    title: "Web Application Development ",
-    info: "Empower your business with our Web App Development service at ABusiness Studio. Our skilled team crafts bespoke web applications to fit your needs perfectly. From design to deployment, we ensure a seamless journey, delivering cutting-edge solutions for your digital success.",
-  },
-  {
-    id: 3,
     logo: "fas fa-money-check-alt",
     title: "Marketing",
     info: "Elevate your brand with A Business Studio's Marketing Services. From strategy to execution, we offer digital, social, and content solutions to amplify your presence and drive results.",
   },
   {
-    id: 4,
-    logo: "fab fa-amazon-pay",
-    title: "Recruitement",
-    info: "Discover top talent effortlessly with A Business Studio's Recruitment Services. We streamline your hiring process with personalized solutions, connecting you with qualified candidates that fit your company culture and goals. Let us find the perfect match for your team.",
-  },
-  {
-    id: 5,
+    id: 3,
     logo: "fas fa-hand-holding-usd",
     title: "Finance",
     info: "Maximize financial potential with A Business Studio's expert Finance Services. From budgeting to risk management, we tailor solutions for your success.",
+  },
+  {
+    id: 4,
+    logo: "fas fa-user-check",
+    title: "Web Application Development ",
+    info: "Empower your business with our Web App Development service at ABusiness Studio. Our skilled team crafts bespoke web applications to fit your needs perfectly. From design to deployment, we ensure a seamless journey, delivering cutting-edge solutions for your digital success.",
+  },
+   {
+    id: 5,
+    logo: insta,
+    title: "Mobile Application Development",
+    info: "Transform your app dreams into reality with A Business Studio. Our seasoned team creates tailored mobile applications from start to finish. From concept to launch, we've got you covered. Let's make your app idea a success together.",
   },
 
 ];
