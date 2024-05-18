@@ -243,7 +243,7 @@ export const serviceapi = [
   {
     id: 1,
     logo: "fab fa-amazon-pay",
-    title: "Recruitement",
+    title: "Recruitment",
     info: "Discover top talent effortlessly with A Business Studio's Recruitment Services. We streamline your hiring process with personalized solutions, connecting you with qualified candidates that fit your company culture and goals. Let us find the perfect match for your team.",
   }, 
   {
