@@ -265,6 +265,10 @@ export const careersData = [
   },
   { title: "UX/UI Designer", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", location: "New York, NY" },
   { title: "Data Scientist", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", location: "San Francisco, CA" },
+   { title: "WEB DEV INTERN", 
+    description: "Lorem ipsum dolor sit .a3oufeobwobfmet, consectetur adipiscing elit", 
+    location: "Hybrid" 
+  },
   // Add more careers as needed
 ];
 
