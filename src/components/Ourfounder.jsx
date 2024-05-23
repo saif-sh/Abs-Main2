@@ -4,7 +4,7 @@ import {rect} from '../assets';
 
 const About = () => (
   <section className={`text-center ${styles.flexStart} sm:my-12 my-2 sm:pr-16 sm:pl-[120px] px-6 sm:py-12 py-4 pl-4 pb-8 sm:flex-row flex-col bg-gray-800 bg-opacity-45 rounded-[20px] box-shadow`}>
-    <div className="flex-1 flex flex-col sm:pt-12 pt-12 ">
+    <div className="flex-1 flex flex-col sm:pt-4 pt-12  ">
       <h1 className={`${styles.heading2} sm:text-left text-center`}>Our  <br className="sm:block hidden" /><span className='text-gradient font-bold text-[52px]'> Dedicated Team</span></h1>
       <p className={`${styles.paragraph} max-w-[720px] mt-6 sm:text-left text-center`}>
         At A Business Studio, we take pride in our team of highly skilled professionals who bring a wealth of expertise and passion to their work. Our team is dedicated to delivering exceptional results and providing top-notch service to our clients.
