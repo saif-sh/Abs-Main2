@@ -259,13 +259,22 @@ export const serviceapi = [
 
 
 export const careersData = [
-  { title: "Marketing Intern", 
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 
-    location: "Remote" 
+  { title: "Sales & Marketing Intern", 
+    description: "This is a full-time remote role for a Sales and Marketing Intern at A Business Studio. As an intern, you will be responsible for various day-to-day tasks including communication with customers, providing excellent customer service, assisting with sales activities, and participating in sales training. Additionally, you will have the opportunity to learn about sales management and gain hands-on experience in a dynamic business environment.", 
+    location: "Location: Remote" 
   },
-  { title: "UX/UI Designer", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", location: "New York, NY" },
-  { title: "Data Scientist", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", location: "San Francisco, CA" },
-  // Add more careers as needed
+  { title: "Human Resources Intern", 
+    description: "This is a full-time remote role for a Human Resources Intern at A Business Studio. As an HR Intern, you will be responsible for assisting with various HR tasks and projects, including HR management, policy development, employee benefits administration, and personnel management. You will also have the opportunity to gain hands-on experience and contribute to the overall success of our HR department.",
+    location: "Location: Remote" 
+  },
+  { title: "Admission Support Officer", 
+    description: "This is a dynamic, on-site opportunity for an Outbound Sales Representative to join our team! You'll build relationships, uncover customer needs, and exceed sales targets for our courses – all while providing exceptional service.  Thriving in a target-driven environment and possessing excellent communication skills (English & Hindi) are essential for success!",
+    location: "Location: Delhi" 
+  },
+  { title: "Lead Generation Specialist", 
+  description: "This is a full-time on-site role for a Lead Generation Specialist at A Business Studio in Noida. As a Lead Generation Specialist, you will be responsible for generating new leads, communicating with potential clients, conducting sales activities, and conducting research to identify new business opportunities.  ",
+  location: "Location: Noida" 
+},
 ];
 
 export const logos = [

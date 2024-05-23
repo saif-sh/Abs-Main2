@@ -18,7 +18,7 @@ import blog4 from "./Blog4.png";
 import blog5 from "./blog5.png";
 import blog6 from "./blog6.png";
 import about from "./abut.png";
-import rect from "./27.png"
+// import rect from "./27.png"
 import mis1 from  "./mis1.png"
 import mis2 from  "./mis2.png"
 import mis3 from  "./mis3.png"
@@ -44,12 +44,16 @@ import profpic from "./profpic.png"
 import modfor from "./modfor.png"
 import log1 from "./log1.png"
 import log2 from "./log2.png"
-import log3 from "./log3.webp"
+import log3 from "./log3.png"
 import log4 from "./log4.svg"
-import log5 from './log5.jpeg'
+import log5 from './log5.png'
+import log6 from "./log6.png"
+import rect from './rect.png'
 
 
 export {
+    log6,
+    // rect,
     log5,
     log4,
     log3,

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import styles from "../style";
 import Marquee from 'react-fast-marquee';
-import { log1, log2, log3, log4, log5 } from '../assets';
+import { log1, log2, log3, log4, log5, log6 } from '../assets';
 
 // Temporary default images
-const images = [log1, log2, log3, log4, log5];
+const images = [log1, log2, log3, log4, log5, log6];
 
-const LogoSlider = ({ direction = 'right',speed = '100', isInfinite = false }) => {
+const LogoSlider = ({ direction = 'right',speed = '100', isInfinite = false, logoSize ='h-24' }) => {
   const [containerWidth, setContainerWidth] = useState(0);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ const LogoSlider = ({ direction = 'right',speed = '100', isInfinite = false }) =
       // Calculate the width of each logo container based on the number of logos and screen width
       const numLogos = images.length;
       const screenWidth = window.innerWidth;
-      const containerWidth = (screenWidth / numLogos) - 8; // 8 is the margin between logos
+      const containerWidth = (screenWidth / numLogos) - 10; // 8 is the margin between logos
       setContainerWidth(containerWidth);
     };
 
@@ -39,8 +39,8 @@ const LogoSlider = ({ direction = 'right',speed = '100', isInfinite = false }) =
         ></div>
         <Marquee direction={direction} speed={speed} gradient={false} loop={isInfinite}>
           {images.map((img, index) => (
-            <div key={index} className="mx-4" style={{ width: containerWidth }}>
-              <img src={img} alt={`Logo ${index + 1}`} className="h-16 w-auto" />
+            <div key={index} className={`mx-4 w-full}`} style={{ width: containerWidth }}>
+              <img src={img} alt={`Logo ${index + 1}`} className={`mx-auto ${logoSize}`} />
             </div>
           ))}
         </Marquee>

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import styles from "../style";
 import Marquee from 'react-fast-marquee';
-import { log1, log2, log3, log4, log5 } from '../assets';
+import { log1, log2, log3, log4, log5,log6 } from '../assets';
 
 // Temporary default images
-const images = [log1, log2, log3, log4, log5];
+const images = [log1, log2, log3, log4, log5,log6];
 
 const LogoSlideredit = ({ direction = 'right', speed = '60', delay = '1', isInfinite = false, logoSize = 'h-16', fullWidth = false }) => {
   const [containerWidth, setContainerWidth] = useState(0);
@@ -24,7 +24,7 @@ const LogoSlideredit = ({ direction = 'right', speed = '60', delay = '1', isInfi
   }, [fullWidth]);
 
   return (
-    <div className={`py-10 bg-black bg-opacity-5 ${fullWidth ? 'w-full' : ''}`}>
+    <div className={`py-10 bg-black  bg-opacity-5 ${fullWidth ? 'w-full' : ''}`}>
       <div className="relative overflow-hidden">
         <div
           className="absolute inset-0 z-10 pointer-events-none"

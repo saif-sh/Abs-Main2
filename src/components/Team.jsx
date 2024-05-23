@@ -25,17 +25,18 @@ const Team = () => {
       role: 'Lead Developer',
       image: 'https://via.placeholder.com/150',
     },
+    {
+      name: 'Hemal Naik',
+      role: 'Creative Business Head',
+      image: 'https://via.placeholder.com/150',
+    },
 
     {
       name: 'Priyanshu Rekhi',
       role: 'Human Resources',
       image: 'https://via.placeholder.com/150',
     },
-    {
-      name: 'Shantanu',
-      role: 'UI/UX Designer',
-      image: 'https://via.placeholder.com/150',
-    },
+
   ];
 
   return (
