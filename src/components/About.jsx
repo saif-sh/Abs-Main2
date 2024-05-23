@@ -4,13 +4,13 @@ import { bldng,about ,newabt} from '../assets';
 import CTA from './CTA'
 
 const About = () =>(
-  <section className={` text-center ${styles.flexStart} sm:my-12 my-2 sm:pr-16 sm:pl-2 px-6 sm:py-12 py-4 pl-4 pb-8 sm:flex-row flex-col bg-gray-800 bg-opacity-45 rounded-[20px] box-shadow `}>
+  <section className={` text-center ${styles.flexStart} sm:my-12 my-2 sm:pr-16 sm:pl-2 px-6 sm:py-12 py-4 pl-4 pb-8 sm:flex-row flex-col bg-gray-800 bg-opacity-45 rounded-[20px] box-shadow sm:mx-0 mx-6`}>
  
- <div className={`${styles.flexCenter} sm:ml-10 sm:mt-0 mt-10`}>
+ <div className={`${styles.flexCenter} sm:ml-10 sm:mt-0 mt-10 p-10 `}>
   <img
             src={newabt}
             alt="About Image"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover animate-ping"
           />
   </div>
 

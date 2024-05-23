@@ -6,7 +6,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
-import {Contactpg, Aboutpg, Blog, Blogpg, Servicespg,CareersPg} from "./Pages"
+import {Contactpg, Aboutpg, Blog, Blogpg, Servicespg,CareersPg, InfiniteLogosPage} from "./Pages"
+import TOS from './Pages/TOS.jsx';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,14 @@ const router = createBrowserRouter([
   {
     path: "/blog/:id",
     element: <Blog/>,
+  },
+  {
+    path: "/terms-and-services/",
+    element: <TOS/>,
+  },
+  {
+    path: "/partners",
+    element: <InfiniteLogosPage/>,
   },
 ]);
 

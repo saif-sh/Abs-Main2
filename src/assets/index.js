@@ -34,8 +34,35 @@ import finsuc from "./finsuc.jpg"
 import recruitment from "./recruitment.jpg"
 import trade from "./trade.jpeg"
 import consult from "./consult.png"
+import ani1 from "./ani1.gif"
+import webdev from "./webdev.gif"
+import modev from "./modev.gif"
+import finpic from "./finpic.gif"
+import recpic from "./recpic.gif"
+import marpic from "./marpic.gif"
+import profpic from "./profpic.png"
+import modfor from "./modfor.png"
+import log1 from "./log1.png"
+import log2 from "./log2.png"
+import log3 from "./log3.webp"
+import log4 from "./log4.svg"
+import log5 from './log5.jpeg'
+
 
 export {
+    log5,
+    log4,
+    log3,
+    log2,
+    log1,
+    modfor,
+    profpic,
+    marpic,
+    recpic,
+    finpic,
+    modev,
+    webdev,
+    ani1,
     finsuc,
     recruitment,
     trade,

@@ -14,8 +14,14 @@ import Sercard from "./Sercard";
 import Team from "./Team";
 import BlogList4Col from "./BlogList4Col";
 import LogoCarousel from "./LogoCarousel";
+import ParentComponent from "./ParentComponent";
+import PartnershipModal from "./PartnershipModal";
+import LogoSlider from "./LogoSlider";
 
 export{
+    LogoSlider,
+    ParentComponent,
+    PartnershipModal,
     LogoCarousel,
     BlogList4Col,
     Team,

@@ -14,9 +14,9 @@ const About = () =>(
           />
   </div>
 
-  <div className="flex-1 flex flex-col lg:mt-12 lg:pl-20">
-    <h2 className={styles.heading2}>Meet the Team</h2>
-    <p className={`${styles.paragraph} text-left max-w-[720px] mt-10 ml-12`}>
+  <div className="flex-1 flex flex-col sm:pt-12 pt-12 lg:pl-20 ">
+    <h2 className={`${styles.heading2} sm:text-left text-center`}>Meet the Team</h2>
+    <p className={`${styles.paragraph} max-w-[720px] mt-6 sm:ml-12 mx-6 sm:text-left text-center` }>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie urna ac libero luctus lobortis. Donec ac ipsum scelerisque, interdum ipsum quis, dapibus dui.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie urna ac libero luctus lobortis. Donec ac ipsum scelerisque, interdum ipsum quis, dapibus dui.
     </p>
   </div>

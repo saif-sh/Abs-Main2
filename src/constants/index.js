@@ -101,7 +101,7 @@ export const footerLinks = [
       },
       {
         name: "Terms & Services",
-        link: "https://www.abusinessstudio.com/terms-and-services/",
+        link: "/terms-and-services",
       },
     ],
   },
@@ -127,11 +127,11 @@ export const footerLinks = [
     links: [
       {
         name: "Our Partner",
-        link: "/partner",
+        link: "/partners",
       },
       {
         name: "Become a Partner",
-        link: "/become-a-partner/",
+        link: "#",
       },
     ],
   },
@@ -232,15 +232,15 @@ export const serviceapi = [
   }, 
   {
     id: 2,
-    logo: "fas fa-money-check-alt",
-    title: "Marketing",
-    info: "Elevate your brand with A Business Studio's Marketing Services. From strategy to execution, we offer digital, social, and content solutions to amplify your presence and drive results.",
-  },
-  {
-    id: 3,
     logo: "fas fa-hand-holding-usd",
     title: "Finance",
     info: "Maximize financial potential with A Business Studio's expert Finance Services. From budgeting to risk management, we tailor solutions for your success.",
+  },
+  {
+    id: 3,
+    logo: "fas fa-money-check-alt",
+    title: "Marketing",
+    info: "Elevate your brand with A Business Studio's Marketing Services. From strategy to execution, we offer digital, social, and content solutions to amplify your presence and drive results.",
   },
   {
     id: 4,

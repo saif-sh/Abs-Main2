@@ -15,10 +15,10 @@ const CTA = () => {
       onClick={handleClick}
     >
       <div
-        className={`${styles.flexCenter} flex-col bg-blue-gradient w-[100%] h-[100%] rounded-xl group-hover:bg-primary z-[]`}
+        className={`${styles.flexCenter} flex-col bg-blue-gradient w-[100%] h-[100%] rounded-xl group-hover:bg-white z-[]`}
       >
         <div className={`${styles.flexStart} flex-row`}>
-          <p className="font-outfit font-bold text-[24px] leading-[23.4px] text-white group-hover:text-black">
+          <p className="font-outfit font-bold text-[24px] leading-[23.4px] text-white group-hover:text-blue-500">
             Connect Now
           </p>
         </div>

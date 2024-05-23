@@ -4,8 +4,10 @@ import Blogpg from "./Blogpg";
 import Servicespg from "./Servicespg";
 import CareersPg from "./Careerspg";
 import Blog from "./Blog";
+import InfiniteLogosPage from "./InfiniteLogosPage";
 
 export {
+    InfiniteLogosPage,
     Blog,
     CareersPg,
     Contactpg,

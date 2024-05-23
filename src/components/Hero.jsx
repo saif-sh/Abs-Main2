@@ -25,7 +25,7 @@ const Hero = () => (
 
     <div className='mx-20 mr-32'>
       <img src={bldng} alt="building"
-        className={` relative z-[5] animate-bounce-slow  flex mt-20 ${styles.flexCenter}`}/>
+        className={` relative z-[5] animate-bounce-slow  flex mt-20 ml-5 ${styles.flexCenter}`}/>
     </div>
     <div className={`ss:hidden ${styles.flexCenter}`}>
         <CTA />

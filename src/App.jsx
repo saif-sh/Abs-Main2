@@ -1,7 +1,7 @@
 import styles from "./style";
-import { Navbar, Hero, Stats, About, Services, Testimonials, Blogcard, Footer} from './components';
+import { Navbar, Hero, Stats, About, Services, Testimonials, Blogcard, Footer, LogoSlider} from './components';
 import { whatslogo } from "./assets";
-import { logos } from "./constants";
+
 
 
 const App = () => (
@@ -18,8 +18,8 @@ const App = () => (
           <Hero />
         </div>
       </div>
-
       <Stats />
+      <LogoSlider/>
       <div className={` ${styles.paddingY} ${styles.flexStart} `}>
         <div className={`${styles.boxWidth} lg:mx-24`}>
           <About />
@@ -30,10 +30,9 @@ const App = () => (
         <Testimonials />
       </div>
       <Blogcard />
-
       <Footer />
     </div>
-    <div className="fixed bottom-0 right-0 p-5 z-6 mb-20 left-auto ">
+    <div className="fixed bottom-0 right-0 p-5 z-10 mb-20 left-auto ">
       <a href="https://wa.me/+918368679354?text=Hi,%20I'm%20interested%20in%20your%20[service]%20for%20my%20[business%20type/size].%20Could%20you%20please%20provide%20pricing%20and%20details?" target="_blank" rel="noopener noreferrer">
         <img src={whatslogo} width="80" alt="Business Studio WhatsApp" />
       </a>

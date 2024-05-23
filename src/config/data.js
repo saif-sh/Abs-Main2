@@ -1,4 +1,4 @@
-import { finsuc, trade, recruitment, consult } from "../assets";
+import { finsuc, trade, recruitment, consult, profpic } from "../assets";
 
 export const blogList = [
   {
@@ -24,7 +24,7 @@ Master the art of budgeting to track your income and expenses, optimize your spe
 
 Whether you're a recent graduate just starting your career or a seasoned professional looking to grow your wealth, our expert insights and practical tips will empower you to make informed decisions and achieve your financial goals. From understanding the basics of compound interest to building a diversified investment portfolio, join us on a journey to financial independence.`,
     authorName: "Sarah Johnson",
-    authorAvatar: "/assets/images/author.jpg",
+    authorAvatar: profpic,
     createdAt: "May 10, 2024",
     cover: finsuc,
   },
@@ -51,7 +51,7 @@ Discover strategies for enhancing the candidate experience through personalized 
 
 Whether you're a hiring manager or HR professional, learn how to leverage technology to streamline your recruitment process and build a winning team for the future.`,
     authorName: "David Smith",
-    authorAvatar: "/assets/images/author.jpg",
+    authorAvatar: profpic,
     createdAt: "May 22, 2024",
     cover: recruitment,
   },
@@ -78,7 +78,7 @@ Discover how consultants work hand-in-hand with clients to implement and execute
 
 Whether you're considering a career in consulting or seeking to engage consulting services for your business, this guide will provide you with valuable insights and practical advice for navigating the complex world of consulting and achieving your business objectives.`,
     authorName: "Emily Johnson",
-    authorAvatar: "/assets/images/author.jpg",
+    authorAvatar: profpic,
     createdAt:"May 15, 2024",
     cover: consult,
   },
@@ -105,7 +105,7 @@ Learn how to mitigate risks associated with international trade, including polit
 
 Whether you're an established multinational corporation or a small-to-medium-sized enterprise looking to expand internationally, this guide will equip you with the knowledge and tools you need to succeed in today's globalized economy.`,
     authorName: "Michael Smith",
-    authorAvatar: "/assets/images/author.jpg",
+    authorAvatar: profpic,
     createdAt: "May 20, 2024",
     cover: trade,
   },

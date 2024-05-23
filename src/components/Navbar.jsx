@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className=" w-[70rem] flex px-8 py-1 pl-2  navbar backdrop-opacity-5 bg-white/10 rounded-2xl mt-6 ">
      <a href="/" className="flex">
       <img src={logo} alt="ABS" className={` w-[56px] h-[56px]`} />
-      <h2 className="sm:flex hidden font-outfit text-[24px] font-bold text-white align-text-bottom pt-[8px] pl-[14px]">A Business Studio</h2>
+      <h2 className="sm:flex hidden font-outfit text-[24px] font-bold text-white text-center pt-[8px] pl-[14px]">A Business Studio</h2>
       </a>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
