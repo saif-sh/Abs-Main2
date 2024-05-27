@@ -273,7 +273,7 @@ export const careersData = [
   },
   { title: "Lead Generation Specialist", 
   description: "This is a full-time on-site role for a Lead Generation Specialist at A Business Studio in Noida. As a Lead Generation Specialist, you will be responsible for generating new leads, communicating with potential clients, conducting sales activities, and conducting research to identify new business opportunities.  ",
-  location: "Location: Remote" 
+  location: "Location: Noida" 
 },
 ];
 
