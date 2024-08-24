@@ -48,10 +48,30 @@ import log3 from "./log3.png"
 import log4 from "./log4.svg"
 import log5 from './log5.png'
 import log6 from "./log6.png"
+import log7 from "./log7.png"
+import log8 from "./log8.png"
+import log9 from "./log9.png"
+import log10 from "./log10.png"
+import log11 from "./log11.png"
 import rect from './rect.png'
+import aiRecruitment from "./aiRecruitment.png"
+import evTrends from "./evTrends.webp"
+import sustainableFashion from "./sustainableFashion.webp"
+import cybersecurity from "./cybersecurity.png"
+import remoteProductivity from "./remoteProductivity.png"
 
 
 export {
+    log7,
+    log8,
+    log9,
+    log10,
+    log11,
+    remoteProductivity,
+    cybersecurity,
+    sustainableFashion,
+    evTrends,
+    aiRecruitment,
     log6,
     // rect,
     log5,

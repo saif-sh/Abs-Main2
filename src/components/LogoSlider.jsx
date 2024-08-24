@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import styles from "../style";
 import Marquee from 'react-fast-marquee';
-import { log1, log2, log3, log4, log5, log6 } from '../assets';
+import { log1, log2, log3, log4, log5, log6 ,log7,log8,log9,log10,log11} from '../assets';
 
 // Temporary default images
-const images = [log1, log2, log3, log4, log5, log6];
+const images = [log1, log2, log3, log4, log5, log6,log7,log8,log9,log10,log11];
 
 const LogoSlider = ({ direction = 'right',speed = '100', isInfinite = false, logoSize ='h-24' }) => {
   const [containerWidth, setContainerWidth] = useState(0);

@@ -17,7 +17,6 @@ const Aboutpg = () => (
             <p className="text-white/75 xs:ml-10 sm:text-left text-center">Welcome to A Business Studio. One Stop For All Your Business Needs</p>
           </div>
           <Ourfounder />
-          <Team/>
           <section className={`${styles.flexStart} sm:mb-6 sm:mt-[80px] my-20 sm:px-16 px-1 sm:py-20 py-4  sm:flex-row flex-col bg-[#D9D9D9] rounded-[100px] box-shadow lg:mx-40 group sm:mx-0 mx-4`}>
             <div className="flex-1 flex flex-col text-black  ">
               <h2 className={`font-outfit font-semibold xs:text-[48px] text-[24px] text-[#161616] xs:leading-[76.8px] leading-[66.8px] w-full text-center group-hover:scale-[1.03] ease-in-out duration-300 group-hover:text-[#2632A1]`}>Our Mission</h2>
