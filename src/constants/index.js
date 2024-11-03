@@ -259,23 +259,28 @@ export const serviceapi = [
 
 
 export const careersData = [
-  { title: "Sales & Marketing Intern", 
-    description: "This is a full-time remote role for a Sales and Marketing Intern at A Business Studio. As an intern, you will be responsible for various day-to-day tasks including communication with customers, providing excellent customer service, assisting with sales activities, and participating in sales training. Additionally, you will have the opportunity to learn about sales management and gain hands-on experience in a dynamic business environment.", 
+  { 
+    title: "Human Resources Intern", 
+    description: "We are seeking a motivated HR Intern to join our team remotely. This unpaid internship offers a high incentive-earning opportunity and hands-on experience in recruitment, employee engagement, and HR administration. Key Responsibilities include supporting recruitment processes, assisting with onboarding, collaborating on employee engagement activities, and aiding in training programs. Qualifications: Pursuing a degree in HR, Business Admin, or related field with strong communication skills. Benefits: Flexible hours, mentorship from founders, networking, and a certificate of completion.",
     location: "Location: Remote" 
   },
-  { title: "Human Resources Intern", 
-    description: "This is a full-time remote role for a Human Resources Intern at A Business Studio. As an HR Intern, you will be responsible for assisting with various HR tasks and projects, including HR management, policy development, employee benefits administration, and personnel management. You will also have the opportunity to gain hands-on experience and contribute to the overall success of our HR department.",
+  { 
+    title: "Sales & Marketing Intern", 
+    description: "Seeking a proactive Sales & Marketing Intern to join remotely. This unpaid internship provides incentives and experience in sales, digital marketing, and business development. Responsibilities include managing social media, conducting market research, updating CRM, creating content, and supporting campaigns. Qualifications: Pursuing a degree in Marketing, Business, or Communications with social media familiarity. Benefits: Flexible hours, guidance from founders, networking, and a certificate of completion.",
     location: "Location: Remote" 
   },
-  { title: "Admission Support Officer", 
-    description: "This is a dynamic, on-site opportunity for an Outbound Sales Representative to join our team! You'll build relationships, uncover customer needs, and exceed sales targets for our courses – all while providing exceptional service.  Thriving in a target-driven environment and possessing excellent communication skills (English & Hindi) are essential for success!",
+  { 
+    title: "Human Resources Executive", 
+    description: "We are hiring an HR Executive to manage recruitment, employee relations, and HR policies. Key Responsibilities include overseeing recruitment, implementing HR policies, managing performance appraisals, and supporting training. Qualifications: Bachelor’s degree in HR or Business, with experience in an HR role and knowledge of labor laws. Benefits: Competitive salary, health benefits, career growth, and a supportive work environment.",
+    location: "Location: On-Site" 
+  },
+  { 
+    title: "Business Development Executive", 
+    description: "Seeking a driven Business Development Executive to find new business opportunities and manage client relations. Responsibilities include lead generation, client acquisition, market research, strategic planning, and sales pitching. Requirements: 1-3 years of experience in business development or sales with strong communication skills. Benefits: Competitive salary, performance-based incentives, and travel opportunities for client meetings.",
     location: "Location: Delhi" 
   },
-  { title: "Lead Generation Specialist", 
-  description: "This is a full-time on-site role for a Lead Generation Specialist at A Business Studio in Noida. As a Lead Generation Specialist, you will be responsible for generating new leads, communicating with potential clients, conducting sales activities, and conducting research to identify new business opportunities.  ",
-  location: "Location: Noida" 
-},
 ];
+
 
 export const logos = [
   "https://via.placeholder.com/150",
