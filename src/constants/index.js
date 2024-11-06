@@ -262,22 +262,22 @@ export const careersData = [
   { 
     title: "Human Resources Intern", 
     description: "We are seeking a motivated HR Intern to join our team remotely. This unpaid internship offers a high incentive-earning opportunity and hands-on experience in recruitment, employee engagement, and HR administration. Key Responsibilities include supporting recruitment processes, assisting with onboarding, collaborating on employee engagement activities, and aiding in training programs. Qualifications: Pursuing a degree in HR, Business Admin, or related field with strong communication skills. Benefits: Flexible hours, mentorship from founders, networking, and a certificate of completion.",
-    location: "Location: Remote" 
+    location: "Remote" 
   },
   { 
     title: "Sales & Marketing Intern", 
     description: "Seeking a proactive Sales & Marketing Intern to join remotely. This unpaid internship provides incentives and experience in sales, digital marketing, and business development. Responsibilities include managing social media, conducting market research, updating CRM, creating content, and supporting campaigns. Qualifications: Pursuing a degree in Marketing, Business, or Communications with social media familiarity. Benefits: Flexible hours, guidance from founders, networking, and a certificate of completion.",
-    location: "Location: Remote" 
+    location: "Remote" 
   },
   { 
     title: "Human Resources Executive", 
     description: "We are hiring an HR Executive to manage recruitment, employee relations, and HR policies. Key Responsibilities include overseeing recruitment, implementing HR policies, managing performance appraisals, and supporting training. Qualifications: Bachelor’s degree in HR or Business, with experience in an HR role and knowledge of labor laws. Benefits: Competitive salary, health benefits, career growth, and a supportive work environment.",
-    location: "Location: On-Site" 
+    location: "On-Site" 
   },
   { 
     title: "Business Development Executive", 
-    description: "Seeking a driven Business Development Executive to find new business opportunities and manage client relations. Responsibilities include lead generation, client acquisition, market research, strategic planning, and sales pitching. Requirements: 1-3 years of experience in business development or sales with strong communication skills. Benefits: Competitive salary, performance-based incentives, and travel opportunities for client meetings.",
-    location: "Location: Delhi" 
+    description: "Seeking a driven Business Development Executive to find new business opportunities and manage client relations. Responsibilities include lead generation, client acquisition, market research, strategic planning, and sales pitching. Qualifications: 1-3 years of experience in business development or sales with strong communication skills. Benefits: Competitive salary, performance-based incentives, and travel opportunities for client meetings.",
+    location: "Delhi" 
   },
 ];
 
