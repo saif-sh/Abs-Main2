@@ -1,9 +1,8 @@
-// src/components/Chip.jsx
 import React from 'react';
 
 const Chip = ({ label, onClick }) => (
   <span
-    className="bg-gradient-to-r from-blue-500 to-blue-300 text-white text-sm px-2 py-1 rounded-full cursor-pointer"
+    className="bg-gray-100 text-gray-600 text-sm px-3 py-1 rounded-full cursor-pointer hover:bg-gray-200 transition-colors duration-300"
     onClick={onClick}
   >
     {label}

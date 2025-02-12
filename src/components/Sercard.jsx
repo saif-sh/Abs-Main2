@@ -1,33 +1,89 @@
 import React, { useState } from "react";
 import { serviceapi } from "../constants";
+import { motion} from "framer-motion";
 
 const Sercard = () => {
   const [serviceData, setServiceData] = useState(serviceapi);
 
+  // Animation variants for the container
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2, // Stagger animations for each child
+        delayChildren: 0.3, // Delay before starting animations
+      },
+    },
+  };
+
+  // Animation variants for each card
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    hover: { scale: 1.05, boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.15)" },
+  };
+
   return (
     <>
-      <section className="py-10 bg-slate-200">
-        <div className="container mx-auto">
-          <h1 className="text-[42px] font-black font-poppins text-center mb-8 text-[#081142]/95 leading-10 tracking-wide">
-            SERVICES
-          </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        className="py-20 bg-[#f5f5f5] rounded-xl"
+      >
+        <div className="container mx-auto px-6">
+          {/* Section Heading */}
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-5xl font-black font-poppins text-center mb-12 text-black tracking-tight"
+          >
+            OUR SERVICES
+          </motion.h1>
+
+          {/* Services Grid */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
             {serviceData.map((curElem) => {
               const { id, logo, title, info } = curElem;
               return (
-                <div
-                  className="bg-white shadow-md rounded-md p-20 px-10 font-poppins group hover:bg-[#0b1759] hover:scale-[1.1] duration-[400ms]"
+                <motion.div
                   key={id}
+                  variants={cardVariants}
+                  whileHover="hover"
+                  className="bg-white border border-gray-200 rounded-lg p-8 relative overflow-hidden group"
                 >
-                  <i className={`${logo} w-10 h-10 text-4xl mb-4 group-hover:text-white`}></i>
-                  <h2 className="text-xl font-bold mb-8  group-hover:text-white" >{title}</h2>
-                  <p className="text-gray-600 font-normal group-hover:text-dimWhite ease-in-out ">{info}</p>
-                </div>
+                  {/* Icon */}
+                  <motion.i
+                    className={`${logo} text-4xl mb-6 text-black group-hover:text-white transition-colors duration-500`}
+                  ></motion.i>
+
+                  {/* Title */}
+                  <motion.h2 className="text-2xl font-bold mb-6 text-black group-hover:text-white transition-colors duration-500">
+                    {title}
+                  </motion.h2>
+
+                  {/* Description */}
+                  <motion.p className="text-gray-700 font-normal group-hover:text-gray-200 transition-colors duration-500">
+                    {info}
+                  </motion.p>
+
+                  {/* Hover Background */}
+                  <motion.div
+                    className="absolute inset-0 bg-black opacity-0 rounded-lg transition-opacity duration-500 group-hover:opacity-100 -z-10"
+                  ></motion.div>
+                </motion.div>
               );
             })}
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

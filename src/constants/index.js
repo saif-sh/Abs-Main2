@@ -261,25 +261,46 @@ export const serviceapi = [
 export const careersData = [
   { 
     title: "Human Resources Intern", 
-    description: "We are seeking a motivated HR Intern to join our team remotely. This unpaid internship offers a high incentive-earning opportunity and hands-on experience in recruitment, employee engagement, and HR administration. Key Responsibilities include supporting recruitment processes, assisting with onboarding, collaborating on employee engagement activities, and aiding in training programs. Qualifications: Pursuing a degree in HR, Business Admin, or related field with strong communication skills. Benefits: Flexible hours, mentorship from founders, networking, and a certificate of completion.",
+    description:
+      "We are seeking a motivated HR Intern to join our team remotely. This unpaid internship offers a high incentive-earning opportunity and hands-on experience in recruitment, employee engagement, and HR administration. Key responsibilities include supporting recruitment processes, assisting with onboarding, collaborating on employee engagement initiatives, and aiding in training programs. Benefits include flexible working hours, mentorship from founders, networking opportunities, and a certificate of completion.",
+    qualification:
+      "Pursuing a degree in Human Resources, Business Administration, or a related field with strong communication skills.",
     location: "Remote" 
   },
   { 
     title: "Sales & Marketing Intern", 
-    description: "Seeking a proactive Sales & Marketing Intern to join remotely. This unpaid internship provides incentives and experience in sales, digital marketing, and business development. Responsibilities include managing social media, conducting market research, updating CRM, creating content, and supporting campaigns. Qualifications: Pursuing a degree in Marketing, Business, or Communications with social media familiarity. Benefits: Flexible hours, guidance from founders, networking, and a certificate of completion.",
+    description:
+      "Join our remote team as a proactive Sales & Marketing Intern. This unpaid internship provides a high incentive-earning opportunity while offering hands-on experience in sales, digital marketing, and business development. Responsibilities include managing social media platforms, conducting market research, updating CRM systems, creating content, and supporting marketing campaigns. Benefits include flexible hours, mentorship from founders, networking opportunities, and a certificate of completion.",
+    qualification:
+      "Pursuing a degree in Marketing, Business, Communications, or a related field with familiarity in social media and digital tools.",
     location: "Remote" 
   },
   { 
     title: "Human Resources Executive", 
-    description: "We are hiring an HR Executive to manage recruitment, employee relations, and HR policies. Key Responsibilities include overseeing recruitment, implementing HR policies, managing performance appraisals, and supporting training. Qualifications: Bachelor’s degree in HR or Business, with experience in an HR role and knowledge of labor laws. Benefits: Competitive salary, health benefits, career growth, and a supportive work environment.",
+    description:
+      "We are hiring an experienced HR Executive to manage key HR functions including recruitment, employee relations, and policy implementation. Responsibilities include overseeing the recruitment process, managing performance appraisals, coordinating training and development, and ensuring compliance with labor laws. Benefits include a competitive salary, health benefits, career growth opportunities, and a supportive work environment.",
+    qualification:
+      "Bachelor's degree in Human Resources, Business Administration, or a related field, with proven HR experience and strong interpersonal skills.",
     location: "On-Site" 
   },
   { 
     title: "Business Development Executive", 
-    description: "Seeking a driven Business Development Executive to find new business opportunities and manage client relations. Responsibilities include lead generation, client acquisition, market research, strategic planning, and sales pitching. Qualifications: 1-3 years of experience in business development or sales with strong communication skills. Benefits: Competitive salary, performance-based incentives, and travel opportunities for client meetings.",
+    description:
+      "We are seeking a driven Business Development Executive to identify new business opportunities and manage client relationships. Key responsibilities include lead generation, client acquisition, market research, strategic planning, and delivering sales presentations. Benefits include a competitive salary, performance-based incentives, and travel opportunities for client meetings.",
+    qualification:
+      "1-3 years of experience in business development or sales, a bachelor's degree in Business, Marketing, or a related field, with strong communication and negotiation skills.",
     location: "Delhi" 
   },
+  {
+    title: "Finance Intern",
+    description:
+      "Join A Business Studio as a Finance Intern in this full-time remote role. You will support financial operations by analyzing cost management, interpreting financial statements, and assisting in the implementation of financial policies. This role offers hands-on experience in financial management within a dynamic outsourcing environment.",
+    qualification:
+      "Strong analytical skills, attention to detail, and pursuing a degree in Finance, Accounting, or a related field.",
+    location: "Remote"
+  }
 ];
+
 
 
 export const logos = [

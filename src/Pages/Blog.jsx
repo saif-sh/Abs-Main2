@@ -20,18 +20,24 @@ const Blog = () => {
   }, [id, navigate]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-900 text-white">
+    <div className="min-h-screen flex flex-col bg-white text-black">
       <div className="container mx-auto px-4 py-8 flex-grow">
-        <Link to="/" className="text-gray-400 font-medium text-sm mb-4 block">
+        {/* Back Button */}
+        <Link
+          to="/"
+          className="text-gray-600 hover:text-black font-medium text-sm mb-4 block transition-colors duration-300"
+        >
           <span>&larr;</span> <span>Go Back</span>
         </Link>
+
         {blog ? (
-          <div className="max-w-4xl mx-auto bg-gray-800 rounded-lg shadow-md p-8">
+          <div className="max-w-4xl mx-auto bg-white border border-gray-200 rounded-lg shadow-sm p-8">
+            {/* Blog Header */}
             <header>
-              <p className="text-sm text-gray-400 font-medium mb-2">
+              <p className="text-sm text-gray-600 font-medium mb-2">
                 Published {blog.createdAt}
               </p>
-              <h1 className="text-3xl font-bold mb-4">{blog.title}</h1>
+              <h1 className="text-4xl font-bold mb-4">{blog.title}</h1>
               <div className="flex flex-wrap gap-2 mb-6">
                 {blog.subCategory.map((category, i) => (
                   <div key={i}>
@@ -40,12 +46,16 @@ const Blog = () => {
                 ))}
               </div>
             </header>
+
+            {/* Blog Cover Image */}
             <img
               src={blog.cover}
               alt="cover"
-              className="w-full h-auto object-cover rounded-lg mb-8 shadow-lg"
+              className="w-full h-auto object-cover rounded-lg mb-8 shadow-md"
             />
-            <div className="prose prose-lg prose-white max-w-none">
+
+            {/* Blog Content */}
+            <div className="prose prose-lg prose-gray max-w-none">
               <ReactMarkdown>{blog.description}</ReactMarkdown>
             </div>
           </div>

@@ -5,14 +5,16 @@ import styles from '../style';
 
 const HomePage = () => {
   return (
-    <div className="text-center"> {/* Center align the content */}
-      <h2 className={`${styles.heading2} p-2 pb-8 mx-auto sm:ml-[-30rem]`} > {/* Center align the heading with a slight left shift */}
-        Our<span className='text-gradient'> Blogs</span>
+    <div className="text-center bg-white py-12"> {/* Center align the content and add padding */}
+      {/* Heading */}
+      <h2 className={`${styles.heading2} p-2 pb-8 mx-auto sm:ml-[-30rem] text-black`}>
+        Our<span className="text-black"> Blogs</span>
       </h2>
+
+      {/* Blog List */}
       <div className="overflow-x-auto whitespace-nowrap mb-8">
         <BlogList4Col blogs={blogList} />
       </div>
-      {/* Other home page content */}
 
       {/* Media query for mobile screens */}
       <style>

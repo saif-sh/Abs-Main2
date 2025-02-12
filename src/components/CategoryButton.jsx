@@ -1,11 +1,10 @@
-// src/components/CategoryButton.jsx
 import React from 'react';
 
 const CategoryButton = ({ category, isActive, onClick }) => {
-  const buttonClass = `px-4 py-2 rounded-md ${
+  const buttonClass = `px-6 py-3 rounded-full text-base font-semibold transition-colors duration-300 ${
     isActive
-      ? 'bg-blue-500 text-white'
-      : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+      ? 'bg-black text-white shadow-lg' // Active state
+      : 'bg-gray-100 text-gray-600 hover:bg-gray-200 hover:shadow-md' // Inactive state
   }`;
 
   return (

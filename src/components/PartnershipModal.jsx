@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import emailjs from 'emailjs-com';
-import { modfor } from '../assets';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const PartnershipModal = ({ showModal, setShowModal }) => {
   const [formData, setFormData] = useState({
@@ -10,6 +10,7 @@ const PartnershipModal = ({ showModal, setShowModal }) => {
     message: '',
   });
 
+  const [errors, setErrors] = useState({});
   const modalRef = useRef();
 
   useEffect(() => {
@@ -20,154 +21,105 @@ const PartnershipModal = ({ showModal, setShowModal }) => {
     };
 
     document.addEventListener('mousedown', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [setShowModal]);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    setErrors({ ...errors, [e.target.name]: '' });
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.name) newErrors.name = 'Name is required';
+    if (!formData.email) newErrors.email = 'Email is required';
+    if (!formData.phoneNumber) newErrors.phoneNumber = 'Phone number is required';
+    if (!formData.message) newErrors.message = 'Message is required';
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!validateForm()) return;
 
     const serviceId = 'your_service_id_here';
     const templateId = 'your_template_id_here';
     const userId = 'your_user_id_here';
 
-    const templateParams = {
-      name: formData.name,
-      email: formData.email,
-      phoneNumber: formData.phoneNumber,
-      message: formData.message,
-    };
-
-    emailjs
-      .send(serviceId, templateId, templateParams, userId)
-      .then(
-        (response) => {
-          console.log('Email sent successfully!', response.status, response.text);
-          setFormData({ name: '', email: '', phoneNumber: '', message: '' });
-          setShowModal(false);
-        },
-        (error) => {
-          console.error('Failed to send email:', error);
-        }
-      );
+    emailjs.send(serviceId, templateId, formData, userId)
+      .then(() => {
+        setFormData({ name: '', email: '', phoneNumber: '', message: '' });
+        setShowModal(false);
+      })
+      .catch((error) => console.error('Failed to send email:', error));
   };
 
-  if (!showModal) return null;
-
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 backdrop-filter backdrop-blur-sm">
-      <div ref={modalRef} className="bg-gray-100 rounded-lg max-w-4xl w-full mx-4">
-        <div className="bg-gray-100 text-gray-500 rounded-lg shadow-xl overflow-hidden" style={{ maxHeight: '80vh' }}>
-          <div className="md:flex w-full">
-            <div className="hidden md:block w-1/2 bg-blue-500 py-10 px-10">
-              <img src={modfor} alt="" className='mt-12'/>
-            </div>
-
-            <div className="w-full md:w-1/2 py-5 px-5 md:px-10">
-              <div className="text-center mb-5">
-                <h1 className="font-bold text-2xl text-gray-900">Contact Us</h1>
-                <p>Please fill out the form below</p>
-              </div>
-              <form onSubmit={handleSubmit}>
-                <div className="flex flex-col space-y-4">
-                  <div>
-                    <label htmlFor="" className="text-xs font-semibold px-1">
-                      Name
-                    </label>
-                    <div className="flex">
-                      {/* Input field for name */}
-                      <input
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="w-full py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-blue-500"
-                        placeholder="John Doe"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label htmlFor="" className="text-xs font-semibold px-1">
-                      Email
-                    </label>
-                    <div className="flex">
-                      {/* Input field for email */}
-                      <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="w-full py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-blue-500"
-                        placeholder="johndoe@example.com"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label htmlFor="" className="text-xs font-semibold px-1">
-                      Phone Number
-                    </label>
-                    <div className="flex">
-                      {/* Input field for phone number */}
-                      <input
-                        type="tel"
-                        name="phoneNumber"
-                        value={formData.phoneNumber}
-                        onChange={handleChange}
-                        className="w-full py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-blue-500"
-                        placeholder="123-456-7890"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label htmlFor="" className="text-xs font-semibold px-1">
-                      Message
-                    </label>
-                    <div className="flex">
-                      {/* Textarea for message */}
-                      <textarea
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        className="w-full py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-blue-500"
-                        rows="4"
-                        placeholder="Enter your message here..."
-                        required
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div className="flex justify-center space-x-4">
-                    <button
-                      type="button"
-                      onClick={() => setShowModal(false)}
-                      className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
-                    >
-                      Cancel
-                    </button>
-                    <button
-                      type="submit"
-                      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
-                    >
-                      Submit
-                    </button>
-                  </div>
+    <AnimatePresence>
+      {showModal && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-80 backdrop-blur-md"
+        >
+          <motion.div
+            ref={modalRef}
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.9, opacity: 0 }}
+            transition={{ type: 'spring', stiffness: 250, damping: 20 }}
+            className="bg-black text-white rounded-xl w-full max-w-lg p-8 shadow-xl"
+          >
+            <h1 className="text-2xl font-semibold text-center mb-6">Let's Connect</h1>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              {['name', 'email', 'phoneNumber', 'message'].map((field) => (
+                <div key={field}>
+                  <label className="block text-sm font-medium mb-1 capitalize">{field}</label>
+                  {field !== 'message' ? (
+                    <input
+                      type={field === 'email' ? 'email' : 'text'}
+                      name={field}
+                      value={formData[field]}
+                      onChange={handleChange}
+                      className="w-full bg-transparent border border-gray-600 rounded-lg py-2 px-4 focus:ring-2 focus:ring-gray-400 outline-none"
+                      placeholder={`Enter your ${field}`}
+                    />
+                  ) : (
+                    <textarea
+                      name={field}
+                      value={formData[field]}
+                      onChange={handleChange}
+                      className="w-full bg-transparent border border-gray-600 rounded-lg py-2 px-4 focus:ring-2 focus:ring-gray-400 outline-none"
+                      rows="4"
+                      placeholder="Enter your message"
+                    ></textarea>
+                  )}
+                  {errors[field] && <p className="text-red-500 text-sm mt-1">{errors[field]}</p>}
                 </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+              ))}
+              <div className="flex justify-end space-x-3 mt-4">
+                <button
+                  type="button"
+                  onClick={() => setShowModal(false)}
+                  className="border border-gray-600 text-white py-2 px-6 rounded-lg hover:bg-gray-800 transition"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="bg-white text-black py-2 px-6 rounded-lg hover:bg-gray-300 transition"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 
 export default PartnershipModal;
-

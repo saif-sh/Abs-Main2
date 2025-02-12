@@ -59,9 +59,20 @@ import evTrends from "./evTrends.webp"
 import sustainableFashion from "./sustainableFashion.webp"
 import cybersecurity from "./cybersecurity.png"
 import remoteProductivity from "./remoteProductivity.png"
+import genAI from "./genAI.png"
+import aiRegulations from './aiRegulations.jpg'
+import digitalNomad from "./digitalNomad.png"
+import climateTech from './climateTech.jpg'
+import metaverse from './metaverse.jpg'
+
 
 
 export {
+    metaverse,
+    climateTech,
+    digitalNomad,
+    aiRegulations,
+    genAI,
     log7,
     log8,
     log9,
