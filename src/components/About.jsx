@@ -23,7 +23,7 @@ const About = () =>(
 
   <div className="flex-1 flex flex-col lg:mt-12 lg:pl-20">
     <h2 className={styles.heading2}>About Us</h2>
-    <p className={`${styles.paragraph} text-center max-w-[] mt-5`}>
+    <p className={`${styles.paragraph} text-justify max-w-[] mt-5`}>
     At the Business Studio, we collaborate with clients to understand their unique challenges and develop tailored solutions. Our comprehensive services span marketing strategies, staffing solutions, and operational frameworks – driving customer satisfaction and fueling sustainable growth. For entrepreneurs and established businesses, we offer a powerful business module leveraging our expertise to ensure enduring success through a client-centric approach.    </p>
     <div className={`${styles.flexCenter} pt-10`}>
     <CTA/>

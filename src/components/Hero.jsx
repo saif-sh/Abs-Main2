@@ -70,7 +70,7 @@ const Hero = () => {
           </motion.h1>
         </motion.div>
         <motion.p
-          className={`font-outfit font-[350] text-black text-[24px] leading-[30.8px] max-w-[670px] mt-2`}
+          className={`font-outfit font-[350] text-black text-[24px] leading-[30.8px] max-w-[670px] mt-2 text-center `}
           initial={{ opacity: 0, x: -30 }}
           animate={{ 
             opacity: 1, 

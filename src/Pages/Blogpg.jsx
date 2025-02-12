@@ -87,13 +87,7 @@ const Blogpg = () => {
       <div className="w-full overflow-hidden">
         {/* Navbar */}
         <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-          <motion.div
-            variants={fadeIn}
-            initial="hidden"
-            animate="visible"
-          >
             <Navbar />
-          </motion.div>
         </div>
 
         {/* Main Content */}

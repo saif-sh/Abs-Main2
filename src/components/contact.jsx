@@ -38,39 +38,39 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-transparent p-6">
+    <div className="min-h-screen flex items-center justify-center bg-transparent p-4 sm:p-6">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="w-full max-w-6xl bg-black/10 dark:bg-black/30 backdrop-blur-sm rounded-2xl border border-black dark:border-white p-8 lg:p-12"
+        className="w-full max-w-6xl bg-black/10 dark:bg-black/30 backdrop-blur-sm rounded-2xl border border-black dark:border-white p-6 lg:p-12"
       >
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-black dark:text-white mb-4">
+        <div className="text-center mb-8 sm:mb-12">
+          <h1 className="text-3xl sm:text-5xl font-bold text-black dark:text-white mb-4">
             Contact Us
           </h1>
-          <p className="text-black dark:text-white text-lg max-w-2xl mx-auto">
+          <p className="text-black dark:text-white text-sm sm:text-lg max-w-2xl mx-auto">
             We'd love to hear from you! Whether you have a question, feedback, or
             just want to say hello, feel free to reach out.
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="lg:w-5/12 bg-black/5 dark:bg-black/20 backdrop-blur-sm p-8 rounded-xl border border-black dark:border-white"
+            className="lg:w-5/12 bg-black/5 dark:bg-black/20 backdrop-blur-sm p-6 sm:p-8 rounded-xl border border-black dark:border-white"
           >
-            <h3 className="text-2xl font-bold text-black dark:text-white mb-6">
+            <h3 className="text-xl sm:text-2xl font-bold text-black dark:text-white mb-4 sm:mb-6">
               Get in touch
             </h3>
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               <div className="flex items-center">
-                <div className="w-10 h-10 bg-black dark:bg-white rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-black dark:bg-white rounded-full flex items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-white dark:text-black"
+                    className="h-4 w-4 sm:h-5 sm:w-5 text-white dark:text-black"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -78,11 +78,11 @@ export default function ContactUs() {
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
                 </div>
-                <div className="ml-4">
-                  <p className="text-black dark:text-white">Email us at</p>
+                <div className="ml-3 sm:ml-4">
+                  <p className="text-black dark:text-white text-sm sm:text-base">Email us at</p>
                   <a
                     href={`mailto:${contactConfig.YOUR_EMAIL}`}
-                    className="text-black dark:text-white font-semibold hover:underline"
+                    className="text-black dark:text-white font-semibold text-sm sm:text-base hover:underline"
                   >
                     {contactConfig.YOUR_EMAIL}
                   </a>
@@ -91,19 +91,19 @@ export default function ContactUs() {
 
               {contactConfig.hasOwnProperty("YOUR_FONE") && (
                 <div className="flex items-center">
-                  <div className="w-10 h-10 bg-black dark:bg-white rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-black dark:bg-white rounded-full flex items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-white dark:text-black"
+                      className="h-4 w-4 sm:h-5 sm:w-5 text-white dark:text-black"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
                       <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                     </svg>
                   </div>
-                  <div className="ml-4">
-                    <p className="text-black dark:text-white">Call us at</p>
-                    <p className="text-black dark:text-white font-semibold">
+                  <div className="ml-3 sm:ml-4">
+                    <p className="text-black dark:text-white text-sm sm:text-base">Call us at</p>
+                    <p className="text-black dark:text-white font-semibold text-sm sm:text-base">
                       {contactConfig.YOUR_FONE}
                     </p>
                   </div>
@@ -111,10 +111,10 @@ export default function ContactUs() {
               )}
 
               <div className="flex items-center">
-                <div className="w-10 h-10 bg-black dark:bg-white rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-black dark:bg-white rounded-full flex items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-white dark:text-black"
+                    className="h-4 w-4 sm:h-5 sm:w-5 text-white dark:text-black"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -125,9 +125,9 @@ export default function ContactUs() {
                     />
                   </svg>
                 </div>
-                <div className="ml-4">
-                  <p className="text-black dark:text-white">Visit us at</p>
-                  <p className="text-black dark:text-white font-semibold">
+                <div className="ml-3 sm:ml-4">
+                  <p className="text-black dark:text-white text-sm sm:text-base">Visit us at</p>
+                  <p className="text-black dark:text-white font-semibold text-sm sm:text-base">
                     {contactConfig.description}
                   </p>
                 </div>
@@ -139,13 +139,13 @@ export default function ContactUs() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="lg:w-7/12 bg-black/5 dark:bg-black/20 backdrop-blur-sm p-8 rounded-xl border border-black dark:border-white"
+            className="lg:w-7/12 bg-black/5 dark:bg-black/20 backdrop-blur-sm p-6 sm:p-8 rounded-xl border border-black dark:border-white"
           >
             <form className="w-full" onSubmit={handleSubmit}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <input
-                    className="w-full bg-white/50 dark:bg-black/50 border border-black dark:border-white rounded-lg py-3 px-4 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent placeholder-black/70 dark:placeholder-white/70"
+                    className="w-full bg-white/50 dark:bg-black/50 border border-black dark:border-white rounded-lg py-2 sm:py-3 px-3 sm:px-4 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent placeholder-black/70 dark:placeholder-white/70 text-sm sm:text-base"
                     id="firstName"
                     name="firstName"
                     placeholder="First Name"
@@ -155,13 +155,13 @@ export default function ContactUs() {
                     required
                   />
                   {errors.firstName && (
-                    <p className="text-black dark:text-white text-sm mt-1">{errors.firstName}</p>
+                    <p className="text-black dark:text-white text-xs sm:text-sm mt-1">{errors.firstName}</p>
                   )}
                 </div>
 
                 <div>
                   <input
-                    className="w-full bg-white/50 dark:bg-black/50 border border-black dark:border-white rounded-lg py-3 px-4 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent placeholder-black/70 dark:placeholder-white/70"
+                    className="w-full bg-white/50 dark:bg-black/50 border border-black dark:border-white rounded-lg py-2 sm:py-3 px-3 sm:px-4 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent placeholder-black/70 dark:placeholder-white/70 text-sm sm:text-base"
                     id="lastName"
                     name="lastName"
                     placeholder="Last Name"
@@ -171,13 +171,13 @@ export default function ContactUs() {
                     required
                   />
                   {errors.lastName && (
-                    <p className="text-black dark:text-white text-sm mt-1">{errors.lastName}</p>
+                    <p className="text-black dark:text-white text-xs sm:text-sm mt-1">{errors.lastName}</p>
                   )}
                 </div>
 
                 <div>
                   <input
-                    className="w-full bg-white/50 dark:bg-black/50 border border-black dark:border-white rounded-lg py-3 px-4 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent placeholder-black/70 dark:placeholder-white/70"
+                    className="w-full bg-white/50 dark:bg-black/50 border border-black dark:border-white rounded-lg py-2 sm:py-3 px-3 sm:px-4 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent placeholder-black/70 dark:placeholder-white/70 text-sm sm:text-base"
                     id="email"
                     name="email"
                     placeholder="Email"
@@ -187,13 +187,13 @@ export default function ContactUs() {
                     required
                   />
                   {errors.email && (
-                    <p className="text-black dark:text-white text-sm mt-1">{errors.email}</p>
+                    <p className="text-black dark:text-white text-xs sm:text-sm mt-1">{errors.email}</p>
                   )}
                 </div>
 
                 <div>
                   <input
-                    className="w-full bg-white/50 dark:bg-black/50 border border-black dark:border-white rounded-lg py-3 px-4 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent placeholder-black/70 dark:placeholder-white/70"
+                    className="w-full bg-white/50 dark:bg-black/50 border border-black dark:border-white rounded-lg py-2 sm:py-3 px-3 sm:px-4 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent placeholder-black/70 dark:placeholder-white/70 text-sm sm:text-base"
                     id="phone"
                     name="phone"
                     placeholder="Mobile Number"
@@ -203,30 +203,30 @@ export default function ContactUs() {
                     required
                   />
                   {errors.phone && (
-                    <p className="text-black dark:text-white text-sm mt-1">{errors.phone}</p>
+                    <p className="text-black dark:text-white text-xs sm:text-sm mt-1">{errors.phone}</p>
                   )}
                 </div>
               </div>
 
-              <div className="mt-6">
+              <div className="mt-4 sm:mt-6">
                 <textarea
-                  className="w-full bg-white/50 dark:bg-black/50 border border-black dark:border-white rounded-lg py-3 px-4 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent placeholder-black/70 dark:placeholder-white/70"
+                  className="w-full bg-white/50 dark:bg-black/50 border border-black dark:border-white rounded-lg py-2 sm:py-3 px-3 sm:px-4 text-black dark:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent placeholder-black/70 dark:placeholder-white/70 text-sm sm:text-base"
                   id="message"
                   name="message"
                   placeholder="Your Message"
-                  rows="5"
+                  rows="4"
                   value={formData.message}
                   onChange={handleChange}
                   required
                 ></textarea>
                 {errors.message && (
-                  <p className="text-black dark:text-white text-sm mt-1">{errors.message}</p>
+                  <p className="text-black dark:text-white text-xs sm:text-sm mt-1">{errors.message}</p>
                 )}
               </div>
 
-              <div className="mt-8">
+              <div className="mt-6 sm:mt-8">
                 <button
-                  className="w-full bg-black dark:bg-white text-white dark:text-black font-semibold py-3 px-8 rounded-lg hover:opacity-90 transition-opacity duration-300"
+                  className="w-full bg-black dark:bg-white text-white dark:text-black font-semibold py-2 sm:py-3 px-6 sm:px-8 rounded-lg hover:opacity-90 transition-opacity duration-300 text-sm sm:text-base"
                   type="submit"
                 >
                   Send Message
