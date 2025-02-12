@@ -5,7 +5,7 @@ import styles from '../style';
 
 const HomePage = () => {
   return (
-    <div className="text-center bg-white py-12"> {/* Center align the content and add padding */}
+    <div className="text-center py-12"> {/* Center align the content and add padding */}
       {/* Heading */}
       <h2 className={`${styles.heading2} p-2 pb-8 mx-auto sm:ml-[-30rem] text-black`}>
         Our<span className="text-black"> Blogs</span>
