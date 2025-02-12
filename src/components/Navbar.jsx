@@ -24,16 +24,23 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="w-full mt-4 pb-20">
+    <div className="w-full pb-20">
+      {/* Navbar */}
       <nav
-        className={`fixed w-full flex px-6 py-3 navbar backdrop-blur-md bg-black/50 rounded-xl shadow-lg max-w-6xl z-50 left-1/2 transform -translate-x-1/2 transition-transform duration-300 ${
+        className={`fixed top-4 left-1/2 transform -translate-x-1/2 w-full flex px-6 py-3 navbar backdrop-blur-md bg-black/50 rounded-xl shadow-lg max-w-6xl z-50 transition-transform duration-300 ${
           showNavbar ? "translate-y-0" : "-translate-y-full"
         }`}
       >
         {/* Logo */}
         <a href="/" className="flex items-center">
-          <img src={logo} alt="A Business Studio" className="w-12 h-12 rounded-lg transition-transform duration-300 hover:scale-105" />
-          <h2 className="sm:flex hidden font-outfit text-lg font-semibold text-white pl-3">A Business Studio</h2>
+          <img
+            src={logo}
+            alt="A Business Studio"
+            className="w-12 h-12 rounded-lg transition-transform duration-300 hover:scale-105"
+          />
+          <h2 className="sm:flex hidden font-outfit text-lg font-semibold text-white pl-3">
+            A Business Studio
+          </h2>
         </a>
 
         {/* Desktop Navigation */}
@@ -51,22 +58,29 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation Toggle */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <button
             onClick={() => setToggle(!toggle)}
             className="z-50 relative focus:outline-none"
           >
-            <img src={toggle ? close : menu} alt="menu" className="w-8 h-8 transition-transform duration-300 hover:scale-110" />
+            <img
+              src={toggle ? close : menu}
+              alt="menu"
+              className="w-8 h-8 transition-transform duration-300 hover:scale-110"
+            />
           </button>
+        </div>
+      </nav>
 
-          {/* Background Blur Effect */}
-          {toggle && (
-            <div 
-              className="fixed inset-0 bg-black/50 backdrop-blur-md z-40"
-              onClick={() => setToggle(false)}
-            ></div>
-          )}
+      {/* Sidebar (Moved Outside Navbar) */}
+      {toggle && (
+        <>
+          {/* Background Overlay */}
+          <div
+            className="fixed inset-0 bg-black/50 backdrop-blur-md z-40"
+            onClick={() => setToggle(false)}
+          ></div>
 
           {/* Sidebar Menu */}
           <div
@@ -82,7 +96,7 @@ const Navbar = () => {
               &times;
             </button>
 
-            {/* Header */}
+            {/* Sidebar Header */}
             <h2 className="text-white text-2xl font-bold text-center mt-4 tracking-wide">
               A Business Studio
             </h2>
@@ -122,8 +136,8 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-        </div>
-      </nav>
+        </>
+      )}
     </div>
   );
 };
