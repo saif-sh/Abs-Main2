@@ -66,11 +66,14 @@ const Hero = () => {
             }}
           >
             Your Business, <br className="sm:block hidden" />{" "}
-            <span className="text-white [-webkit-text-stroke:1.5px_black]"> Our Expertise.</span>{" "}
+            <span className="text-white [-webkit-text-stroke:1px_black] lg:[-webkit-text-stroke:1.5px_black] lg:no-text-shadow">
+  Our Expertise.
+</span>
+{" "}
           </motion.h1>
         </motion.div>
         <motion.p
-          className={`font-outfit font-[350] text-black text-[24px] leading-[30.8px] max-w-[670px] mt-2 text-center `}
+          className={`font-outfit font-[350] text-black text-[24px] leading-[30.8px] max-w-[670px] mt-2 text-center [text-shadow:0_0_5px_White] `}
           initial={{ opacity: 0, x: -30 }}
           animate={{ 
             opacity: 1, 

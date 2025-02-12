@@ -5,7 +5,7 @@ import { whatslogo } from "./assets";
 
 
 const App = () => (
-  <div className="bg-[url('./assets/bgimg.png')] bg-cover p-0">
+  <div className="bg-[url('./assets/bgimg1.png')] lg:bg-[url('./assets/bgimg.png')] bg-cover p-0">
     <div className=" w-full overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
 

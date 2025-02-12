@@ -64,10 +64,12 @@ import aiRegulations from './aiRegulations.jpg'
 import digitalNomad from "./digitalNomad.png"
 import climateTech from './climateTech.jpg'
 import metaverse from './metaverse.jpg'
+import bgimpg1 from "./bgimg1.png"
 
 
 
 export {
+    bgimpg1,
     metaverse,
     climateTech,
     digitalNomad,
