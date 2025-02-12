@@ -4,6 +4,10 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      textShadow: {
+        'outline-1': '1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black',
+        'outline-1.5': '1.5px 1.5px 0 black, -1.5px -1.5px 0 black, 1.5px -1.5px 0 black, -1.5px 1.5px 0 black',
+      },
       colors: {
         primary: "#00040f",
         secondary: "#00f6ff",
@@ -36,6 +40,7 @@ module.exports = {
     }
   },
   plugins: [
+    require('tailwindcss-textshadow'),
     require('tailwind-scrollbar-hide'),
   ],
 };

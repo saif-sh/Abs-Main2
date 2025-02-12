@@ -66,8 +66,8 @@ const Hero = () => {
             }}
           >
             Your Business, <br className="sm:block hidden" />{" "}
-            <span className="text-white [-webkit-text-stroke:1px_black] lg:[-webkit-text-stroke:1.5px_black] lg:no-text-shadow">
-  Our Expertise.
+            <span class="text-gray-200 lg:no-underline lg:text-white text-shadow-outline-1 sm:text-shadow-outline-1.5">
+    Our Expertise.
 </span>
 {" "}
           </motion.h1>
